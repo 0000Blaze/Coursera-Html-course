@@ -1,0 +1,94 @@
+
+/** Module 2 solution css file**/
+
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	font-family: "Times New Roman", Times,serif;
+	font-size: 16px;
+	background-color: orange;
+}
+
+#header{
+	margin: 10px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 175%;
+}
+
+/** All column common ***/
+.col{
+		margin:20px 10px 20px 10px;
+		background-color: blue;
+		position: relative;
+	}
+
+/** Section head **/
+.mini{
+	position: absolute;
+	top:0;
+	right:0;
+	font-size: 125%;
+	margin: 0px;
+	padding: 10px 20px 10px 20px;
+	background-color: grey;
+	border:1px solid black;
+
+}
+
+/** Section content **/
+.txt{
+	margin-top:40px;
+	padding: 10px;
+	color:white;
+}
+
+/******Responsive Framework******/
+.row{
+	width: 100%;
+	overflow: auto;
+}
+
+/******* Desktop Design*******/
+
+@media (min-width:992px){
+
+	.col-lg-4{
+		width:31%;
+		float:left;
+		border: 1px solid black;
+	} 
+}
+
+/***** Tablet Design *****/
+
+@media (min-width:768px) and (max-width:991px){
+
+	.col-md-6{
+		width:46.9%;
+		float:left;
+		border: 1px solid black;
+	}
+
+	.col-md-12{
+		width:96.1%;
+		float:left;
+		border: 1px solid black;
+	}
+}
+
+/***** Phone Design *****/
+
+@media (max-width:767px){
+	
+	.col-sm-12{
+		width:90%;
+		float:left;
+		border: 1px solid black;
+	}
+
+}
