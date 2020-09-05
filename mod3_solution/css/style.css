@@ -1,0 +1,145 @@
+
+/** Module 3 solution css file**/
+
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* nav bar designs */
+
+#header-nav{
+	background-color: #f6b319;
+	border-radius: 0;
+	border: 0 ; 
+}
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { 
+  font-family: 'Lora', serif;
+  color: #557c3e;
+  font-size: 1.65em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+
+/*menu buttons*/
+
+#nav-list {
+  margin-top: 10px;
+  font-size: 1.8em
+  text-align: center;
+}
+
+#nav-list div {
+  margin: 2px;
+  padding: 0;
+  border:1px solid black;
+  font-size: 1.2em;
+  color: white;
+  background-color: grey;
+  text-align: center;
+}
+
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+
+
+/* body designs */
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.menu{
+	border: 0;
+	font-size: 1.5em;
+}
+/** All column common ***/
+.col{
+		margin:20px 10px 20px 10px;
+		background-color: blue;
+		position: relative;
+	}
+
+/** Section head **/
+.mini{
+	position: absolute;
+	top:0;
+	right:0;
+	font-size: 125%;
+	margin: 0px;
+	padding: 10px 20px 10px 20px;
+	background-color: grey;
+	border:1px solid black;
+
+}
+
+/** Section content **/
+.txt{
+	margin-top:40px;
+	padding: 10px;
+	color:white;
+}
+
+/******Responsive Framework******/
+.row{
+	width: 100%;
+	overflow: auto;
+}
+
+/******* Desktop Design*******/
+
+@media (min-width:992px){
+
+	.col-lg-4{
+		width:31%;
+		float:left;
+		border: 1px solid black;
+	} 
+}
+
+/***** Tablet Design *****/
+
+@media (min-width:768px) and (max-width:991px){
+
+	.col-md-6{
+		width:46.9%;
+		float:left;
+		border: 1px solid black;
+	}
+
+	.col-md-12{
+		width:96.1%;
+		float:left;
+		border: 1px solid black;
+	}
+}
+
+/***** Phone Design *****/
+
+@media (max-width:767px){
+	
+	.col-sm-12{
+		width:90%;
+		float:left;
+		border: 1px solid black;
+	}
+
+}
