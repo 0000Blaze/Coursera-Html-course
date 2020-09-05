@@ -16,6 +16,7 @@
 }
 .navbar-brand {
   padding-top: 25px;
+  margin-bottom: 10px;
 }
 
 .navbar-brand h1 { 
@@ -71,6 +72,7 @@ body {
 	border: 0;
 	font-size: 1.5em;
 }
+
 /** All column common ***/
 .col{
 		margin:20px 10px 20px 10px;
@@ -80,14 +82,11 @@ body {
 
 /** Section head **/
 .mini{
-	position: absolute;
-	top:0;
-	right:0;
-	font-size: 125%;
+	font-size: 140%;
 	margin: 0px;
-	padding: 10px 20px 10px 20px;
-	background-color: grey;
-	border:1px solid black;
+	padding: 10px 0 0 0 ;
+	border:0px;
+	text-align: center;
 
 }
 
@@ -102,44 +101,4 @@ body {
 .row{
 	width: 100%;
 	overflow: auto;
-}
-
-/******* Desktop Design*******/
-
-@media (min-width:992px){
-
-	.col-lg-4{
-		width:31%;
-		float:left;
-		border: 1px solid black;
-	} 
-}
-
-/***** Tablet Design *****/
-
-@media (min-width:768px) and (max-width:991px){
-
-	.col-md-6{
-		width:46.9%;
-		float:left;
-		border: 1px solid black;
-	}
-
-	.col-md-12{
-		width:96.1%;
-		float:left;
-		border: 1px solid black;
-	}
-}
-
-/***** Phone Design *****/
-
-@media (max-width:767px){
-	
-	.col-sm-12{
-		width:90%;
-		float:left;
-		border: 1px solid black;
-	}
-
 }
